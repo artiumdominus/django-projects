@@ -1,5 +1,7 @@
-body {
-	background: white url("images/background0.jpg") no-repeat;
+h1 {
+	color: white;
+	background-color: black;
+	text-align: center;
 }
 
 ul {
@@ -12,7 +14,7 @@ ul {
 
 li a {
 	display: block;
-	color: green;
+	color: black;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -21,4 +23,38 @@ li a {
 li a:hover {
 	color: aqua;
 	background-color: #111;
+}
+
+input[type=radio] {
+	display: none;
+}
+
+form label {
+	display: block;
+	padding: 14px 16px;
+}
+
+form label:hover {
+	color: aqua;
+	background-color: #111;
+}
+
+input[type=radio]:checked + label {
+	color: aqua;
+	background-color: #111;
+}
+
+input[type=submit] {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
 }
